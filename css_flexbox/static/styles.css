@@ -1,0 +1,99 @@
+/* These properties basically offset any default CSS coming from your browser */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh; 
+    background-color: #F5EEEE;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(70, 70, 70);
+}
+
+/* MAIN STYLES */
+
+main {
+    width: 900px;
+    height: 500px;
+    display: flex; 
+    padding: 20px; 
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px grey;
+    gap: 100px;
+}
+
+/* SECTION STYLES */
+
+#side-menu {
+    width: 30%; /*% is based off the parent container */
+}
+
+#side-menu > img {
+    height: 100%;
+    width: 100%; 
+}
+
+#steps {
+    /* could do this with baackground-image property (background-image: url()) */
+    position: relative;
+    top: -450px;
+    left: 60px;
+    width: 200px; 
+    color: white; 
+}
+
+#steps > div {
+    display: flex; 
+    align-items: center; 
+    /* justify-content: center;  */
+    height: 80px;
+}
+
+.number {
+    border: 1px solid white;
+    display: flex; 
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    text-align: center; 
+    /* transform: translateY(10px); */
+    justify-content: center;
+    align-items: center; 
+    margin-right: 30px;
+}
+
+#side-form {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    
+}
+
+
+form {
+    display: flex;
+    flex-direction: column; 
+    height: 75%; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+form > input {
+    width: 100%; 
+    border-radius: 5px; 
+    border: 1px solid grey; 
+    height: 30px;
+}
+
+form > button {
+    height: 30px; 
+    width: 100px; 
+    align-self: end;
+    margin-top: 70px;
+    background-color: #0C0B52;
+    color: white; 
+    border-radius: 5px;
+}
